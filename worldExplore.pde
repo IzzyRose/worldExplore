@@ -13,8 +13,6 @@ int hairU = 0;
 int hairD = 0;
 int hairR = 0;
 
-//From beta testing: cheeses with legs, monsters
-
 void setup() {
   size(800,500);
   noStroke();
@@ -31,6 +29,7 @@ void draw() {
     dy = -dy;
   }
   
+  //Possible enemy, need to fix 
   //fill(220);
   //rect(ex,ey,80,80);
   
@@ -68,7 +67,7 @@ void draw() {
   rect(wx,wy-450,20,80);
   rect(wx+40,wy-450,20,80);
   
-  
+  //Fix to make enemies move
   //ex = ex + dx;
   //ey = ey + dy;
   
@@ -170,7 +169,7 @@ void keyPressed(){
       hairU = 0;
       hairD = 0;
     }
-    else if(keyCode == ENTER){
+    else if(keyCode == ENTER){        //Edit later for possible diagonal movement
       w = w - 25;
       h = h - 25;
       //delay(5000);
